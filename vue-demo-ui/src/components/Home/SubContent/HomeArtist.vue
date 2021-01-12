@@ -37,11 +37,11 @@
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
+  font-weight: bold;
 }
 
 h5 {
   color: #1daeff;
-  font-weight: bold;
 }
 
 .designer2 {
@@ -54,6 +54,7 @@ h5 {
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
+  font-weight: bold;
 }
 
 .tyre {

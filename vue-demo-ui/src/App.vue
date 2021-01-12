@@ -1,15 +1,16 @@
 <template>
-  <div >
-    <nav-bar></nav-bar>
-    <home-content></home-content>
+  <div>
+    <nav-bar></nav-bar> 
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
   import NavBar from './components/Navigation/NavBar.vue';
-  import HomeContent from './components/Home/HomeContent.vue';
   export default {
-    components: { NavBar, HomeContent },
+    components: { 
+      NavBar,
+    },
   };
 </script>
 
@@ -25,6 +26,7 @@
 
   body {
     margin: 0;
+    scroll-behavior: smooth;
     background: url('https://www.toptal.com/designers/subtlepatterns/patterns/greek-vase.png');
   }
 </style>

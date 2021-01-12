@@ -10,8 +10,8 @@
   background-color: #1daeff;
   height: 30rem;
   float: right;
-    display: flex;
-    align-items: center;
+  display: flex; 
+  align-items: center;
 }
 
 h5{

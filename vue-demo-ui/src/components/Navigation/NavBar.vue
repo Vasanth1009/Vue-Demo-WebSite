@@ -2,10 +2,12 @@
   <div class="navigationbar">
     <nav class="navbar navbar-expand-lg navbar-light" :class="navbarbg">
       <div class="container">
-        <a class="navbar-brand" href="#home"
+        <router-link to="/home" >
+        <a class="navbar-brand nav-link" :class="{ active: activeHome === true }" @click="activeHomeToggle"
           ><header>ABCD</header>
           <span>WXYZ</span></a
         >
+        </router-link>
         <button
           class="navbar-toggler"
           type="button"
@@ -20,13 +22,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">HOME</a>
+              <router-link to="/home" ><a class="nav-link" :class="{ active: activeHome === true }" @click="activeHomeToggle" aria-current="page" >Home</a></router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#ourwork">OURWORK</a>
+              <router-link to="/ourwork" ><a class="nav-link" :class="{ active: activeOurWork === true }" @click="activeOurWorkToggle" >Our Works</a></router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services">SERVICES</a>
+              <a class="nav-link" :class="{ active: activeServices === true }" @click="activeServiceToggle" >Services</a>
             </li>
           </ul>
           <button class="btn">GET A QUOTE</button>
@@ -41,7 +43,27 @@
     data() {
       return {
         navbarbg: '',
+        activeHome: false,
+        activeOurWork: false,
+        activeServices: false,
       };
+    },
+    methods: {
+      activeHomeToggle() {
+        this.activeHome = true;
+        this.activeOurWork= false;
+        this.activeServices= false;
+      },
+      activeOurWorkToggle() {
+        this.activeHome = false;
+        this.activeOurWork= true;
+        this.activeServices= false;
+      },
+      activeServiceToggle() {
+        this.activeHome = false;
+        this.activeOurWork= false;
+        this.activeServices= true;
+      }
     },
     mounted() {
       window.document.onscroll = () => {
@@ -56,6 +78,10 @@
 </script>
 
 <style scoped>
+  a {
+    text-decoration: none;
+  }
+
   .navigationbar {
     position: sticky;
     top: 0;
@@ -91,7 +117,7 @@
   button {
     background-color: #ffffff;
     font-weight: bold;
-    color: black;
+    color: #020074;
     cursor: pointer;
     padding: 0.5rem 2rem;
     border-radius: 30px;
@@ -101,6 +127,7 @@
   button:hover {
     background: #1daeff;
     color: #020074;
+    border: 3px solid #020074;
   }
 
   button:focus {

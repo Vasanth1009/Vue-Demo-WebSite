@@ -10,7 +10,8 @@
   "dependencies": {
     "bootstrap": "^5.0.0-beta1",
     "core-js": "^3.6.5",
-    "vue": "^3.0.0"
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.3"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",

@@ -1,24 +1,11 @@
 <template>
-  <div id="home">
+  <div class="container" id="home">
     <section class="main-section">
       <div class="main-content">
         <h6>AWARD WINNING DESIGN</h6>
-        <h1>We make your Business look</h1>
-        <div class="great-svg">
-          <h1>great</h1>
-          <svg
-            width="127"
-            height="32"
-            viewBox="0 0 127 32"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M2 28.6996C36.5 13.8663 100.1 -5.39999 124.5 9.00001"
-              stroke="#1DAEFF"
-              stroke-width="6"
-            />
-          </svg>
+        <h1>We make your <br/>Business look <br/>great</h1>
+        <div class="great-img">
+          <img src="../../assets/pensketch.png" >
         </div>
         <button class="btn">
           <i class="fas fa-search"></i> <span>OURWORK</span>
@@ -29,7 +16,7 @@
       </div>
     </section>
   </div>
-  <div class=" subcontent">
+  <div class="subcontent">
     <home-artist></home-artist>
     <home-description></home-description>
   </div>
@@ -46,13 +33,13 @@ export default {
 <style scoped>
   .main-section {
     margin: auto;
-    height: 700px;
+    height: 50rem;
     display: flex;
     justify-content: center;
-    max-width: 1540px;  
   }
+
   .main-content {
-    margin: 10rem 0rem 10rem 12rem;
+    margin: 10rem 5rem;
     width: 40%;
   }
 
@@ -79,18 +66,15 @@ export default {
     margin: 0.5rem;
   }
 
-  .great-svg {
+  .great-img img {
+    width: 35%;
     margin-top: -1rem;
-  }
-
-  .great-svg svg {
-    margin-top: -2rem;
   }
 
   button {
     margin: 2rem;
     background-color: #020074;
-    font-weight: bold;
+    font-weight: bolder;
     color: #ffffff;
     cursor: pointer;
     padding: 0.75rem 2rem;
@@ -99,8 +83,9 @@ export default {
   }
 
   button:hover {
-    background: #1daeff;
+    background: #ffffff;
     color: #020074;
+    border: 3px solid #020074;
   }
 
   .main-content button svg {
@@ -112,15 +97,14 @@ export default {
   }
 
   .main-image {
-    
-    /* margin-top: 8rem; */
-    margin-right: 10rem;
+    margin-top: 4rem;
+    margin-right: 3rem;
   }
 
   .subcontent {
     margin: auto;
     display: flex;
     justify-content: center;
-    max-width: 1540px;
+    max-width: 100rem;
   }
 </style>
