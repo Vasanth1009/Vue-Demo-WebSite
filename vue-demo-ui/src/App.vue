@@ -6,12 +6,13 @@
 </template>
 
 <script>
-  import NavBar from './components/Navigation/NavBar.vue';
-  export default {
-    components: { 
-      NavBar,
-    },
-  };
+import NavBar from './components/Navigation/NavBar.vue';
+
+export default {
+  components: { 
+    NavBar,
+  },
+};
 </script>
 
 <style>
@@ -26,7 +27,7 @@
 
   body {
     margin: 0;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
     background: url('https://www.toptal.com/designers/subtlepatterns/patterns/greek-vase.png');
   }
 </style>
