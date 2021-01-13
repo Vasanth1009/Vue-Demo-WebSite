@@ -16,7 +16,7 @@ import Error404 from './components/PageNotFound/Error404.vue';
 
 const router = createRouter({
   history: createWebHistory(),
-  scrollBehavior(savedPosition) {
+  scrollBehavior() {
       return { left: 0, top: 0 };
   },
   routes: [
