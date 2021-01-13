@@ -28,7 +28,7 @@
               <router-link to="/ourwork" ><a class="nav-link" :class="{ active: activeOurWork === true }" @click="activeOurWorkToggle" >Our Works</a></router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" :class="{ active: activeServices === true }" @click="activeServiceToggle" >Services</a>
+              <router-link to="/services" ><a class="nav-link" :class="{ active: activeServices === true }" @click="activeServiceToggle" >Services</a></router-link>
             </li>
           </ul>
           <button class="btn">GET A QUOTE</button>
@@ -67,7 +67,7 @@
     },
     mounted() {
       window.document.onscroll = () => {
-        if (window.scrollY > 50) {
+        if (window.scrollY > 0) {
           this.navbarbg = 'bg-light';
         } else {
           this.navbarbg = '';
@@ -89,7 +89,6 @@
   }
 
   .navbar {
-    margin-top: 1rem;
     display: flex;
   }
 
