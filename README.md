@@ -4,4 +4,4 @@
 Working in mobile edition
 
 
-Demo Link : https://demovuesite.netlify.app/
+Demo Vue Link : https://demovuesite.netlify.app/
