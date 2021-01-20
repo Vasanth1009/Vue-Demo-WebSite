@@ -4,4 +4,4 @@
 - ***Working in mobile edition***
 
 
-***Demo Vue Link : https://demovuesite.netlify.app/***
+***Demo Vue App Link : https://demovuesite.netlify.app/***
