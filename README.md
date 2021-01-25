@@ -1,6 +1,6 @@
 # Vue-Demo-WebSite
 
-- ***View only in desktop mode.***
+- ***View only in desktop mode...***
 - ***Mobile view will come soon...***
 
 
