@@ -4,4 +4,4 @@
 - ***Mobile view will come sooon...***
 
 
-***Demo Vue App Link : https://demovuesite.netlify.app/***
+***Demo Vue App Link: https://demovuesite.netlify.app/***
